@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Testing Properties</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+<h1>Properties</h1>
+<button><a th:href="@{/welcome}"> Home Page </a> </button>
+<h3>Service Now Data</h3>
+<table border="1">
+	<tr>
+		<td>Application QA Group Number</td>
+		<td th:text="${appQaGroup}"/>
+	</tr>
+	<tr>
+		<td>Identity Management Group Number</td>
+		<td th:text="${idmGroup}"/>
+	</tr>
+	<tr>
+		<td>Incident State Field</td>
+		<td th:text="${incidentState}"/>
+	</tr>
+	<tr>
+		<td>Incident Table Name</td>
+		<td th:text="${incident}"/>
+	</tr>
+	<tr>
+		<td>Instance</td>
+		<td th:text="${instance}"/>
+	</tr>
+	<tr>
+		<td>Service Now Credentials</td>
+		<td th:text="${serviceNowCred}"/>
+	</tr>
+	<tr>
+		<td>JSON Array Name</td>
+		<td th:text="${jsonArray}"/>
+	</tr>
+	<tr>
+		<td>Long Description Field</td>
+		<td th:text="${longDescription}"/>
+	</tr>
+	<tr>
+		<td>Number Field</td>
+		<td th:text="${number}"/>
+	</tr>
+	<tr>
+		<td>Request Item Table Name</td>
+		<td th:text="${reqItm}"/>
+	</tr>
+	<tr>
+		<td>Short Description Field</td>
+		<td th:text="${shortDescription}"/>
+	</tr>
+	<tr>
+		<td>Sysid Field</td>
+		<td th:text="${sysId}"/>
+	</tr>
+
+</table>
+
+
+<h3>Leankit Data</h3>
+<table border="1">
+	<tr>
+		<td>Assigned Developer</td>
+		<td th:text="${assignedDeveloper}"/>
+	</tr>
+	<tr>
+		<td>Board Id</td>
+		<td th:text="${boardId}"/>
+	</tr>
+	<tr>
+		<td>Card Tag</td>
+		<td th:text="${cardTag}"/>
+	</tr>
+	<tr>
+		<td>Card Type Id</td>
+		<td th:text="${cardTypeId}"/>
+	</tr>
+	<tr>
+		<td>Lane Id</td>
+		<td th:text="${plannedLaneId}"/>
+	</tr>
+	<tr>
+		<td>Leankit Credentials</td>
+		<td th:text="${lkcred}"/>
+	</tr>
+	
+</table>
+</body>
+</html>

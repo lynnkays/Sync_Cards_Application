@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Leankit Service Now Sync Application</title>
+</head>
+<body>
+<h1 style="text-align: center" th:text="${welcome}"></h1>
+
+<div class="displayTickets">
+	<h3>IDM Tickets</h3>
+	<label th:each="ticket,status : ${idmIncidents}" th:for="|ticket${status.index}|" th:text="${ticket.getNumber()} "></label>
+</div>
+
+
+<h2>LAST RUN TIME</h2>
+<h4 th:text="${time}"></h4>
+</body>
+</html>

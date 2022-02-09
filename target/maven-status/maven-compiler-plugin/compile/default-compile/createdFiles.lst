@@ -1,0 +1,12 @@
+application\api\LeankitApi.class
+application\config\ServiceNowConfig.class
+application\services\LeankitService.class
+application\model\Card.class
+application\services\ServiceNowService.class
+application\config\LeankitConfig.class
+application\model\Ticket.class
+application\api\ServiceNowApi.class
+application\controller\MainController.class
+application\api\Api.class
+application\SpringBoot.class
+application\config\SchedulerConfig.class
